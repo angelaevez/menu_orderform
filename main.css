@@ -1,0 +1,352 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "content1 content1 content2 content2"
+      "content3 content3 content4 content4"
+      "footer footer footer footer";
+    justify-items: center;
+    align-items: center;
+}
+
+
+* {
+    font-family: 'Lato', sans-serif; 
+    letter-spacing: .1em;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width:100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    ul.mainNav li a {
+      float: none;
+      text-align: center;
+      font-size: 14px;
+      }
+    
+    .container {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "content1"
+        "content2"
+        "content4"
+        "content3"
+        "footer";
+    }
+
+    video {
+        width: 300px;
+        height: auto;
+    }
+
+    
+}
+
+
+/* Start to Header */
+
+header {
+    grid-area: header;
+    width: 100%;
+}
+
+img#logo  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: -20px;
+    padding: 10px;
+}
+
+nav { 
+    float: right;
+    padding-top:10px;
+    
+}
+
+li {
+    font-size: 16px;
+    font-weight: bold;
+    list-style-type: none; 
+    display: inline;
+    padding: .5em;
+    margin: .5em;
+    text-transform: uppercase;
+}
+
+
+/* End to Header */
+
+/* index.html */
+
+.image1 {
+    grid-area: main;
+   
+}
+
+h2 {
+    color: rgba(50, 21, 6, .8);
+    background-color: rgba(233, 233, 240, .6);
+    line-height: 1.5em;
+    margin: 1em auto 1em auto;
+    padding: 2em 1em;
+    text-align: center;
+    max-width: 80%;
+    border: 4px solid rgba(50, 21, 6, 0.6);
+}
+
+
+.topLeft {
+    grid-area: content1;
+    margin: 1.5em;
+}
+
+.topRight {
+    grid-area: content2;
+    align-self: center;
+    justify-self: center;
+}
+
+.bottomLeft {
+    grid-area: content3;
+}
+
+.bottomRight {
+    grid-area: content4;
+    margin: 1.5em;
+}
+
+a.darkBackground {
+    background-color: white;
+    border: 5px solid rgba(50, 21, 6, 0.7);
+    width: 50%;
+    padding:.2em;
+    display: block;
+    margin: 2em auto 1em auto;
+}
+
+/* End to index.html */
+
+/* Start to menu.html */
+
+.menuImage1 {
+    grid-area: content1;
+    margin: 0;
+}
+
+
+.drinkMenu {
+    grid-area: content2;
+    width: 100%;;
+    height: 100%;
+    text-align: center;
+    color: rgba(50, 21, 6, .8);
+    background-color: rgba(233, 233, 240, .6);
+       
+    
+}
+
+.foodMenu {
+    grid-area: content3;
+    width: 100%;;
+    height: 100%;
+    text-align: center;
+    color: rgba(50, 21, 6, .8);
+    background-color: rgba(233, 233, 240, .6);
+           
+    
+}
+
+.menuImage2 {
+    grid-area: content4;
+    margin: 0;
+}
+
+
+h3 {
+    margin-top: 2em;
+    text-transform: uppercase;
+    
+}
+
+
+p {
+    text-align: center;
+    
+   
+}
+
+/* End to menu.html */
+
+/* Start to contact.html */
+
+#form {
+    grid-area: content2;
+    background-color: white;
+    margin-top: 10em;
+    margin-bottom: 2em;
+    padding: 3em;
+    text-align: left;
+    border: 4px solid  rgba(50, 21, 6, 0.6);
+    font-weight: bold;
+    width: 60%;
+
+}
+
+label {
+    display: block;
+    padding: 1em;
+}
+
+legend {
+    padding:1em 0em;
+    text-transform: uppercase;
+}
+
+fieldset {
+    color: rgba(50, 21, 6, 0.9);
+    
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    margin-left: 1em;
+    border-radius: 5px;
+}
+
+
+input {
+    font-size: 120%;
+    color: rgba(50, 21, 6, 0.9);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    background-color: lightgreen;
+}
+
+.submit {
+    background-color: rgb(116, 243, 237);
+    border-bottom: 2px solid black;
+    text-shadow: 0px 1px 1px #ffffff;
+    font-weight: bold;
+    margin-left: 14px;
+
+}
+
+.contactImage {
+    grid-area: content1;
+    
+}
+
+.contactColorBackground {
+    grid-area: content2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(144, 238, 144, 0.534);
+}
+
+h1 {
+    color: rgba(50, 21, 6, 0.9);
+    font-family: 'montserratregular';
+    display: block;
+    font-size: 36px;
+    padding-top: 10%;
+}
+
+/* End to contact.html */
+
+/* Start to about.html */
+.about {
+    grid-area: content1;
+    background-color: rgba(144, 238, 144, 0.534);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.video {
+    grid-area: content1;
+    margin-bottom: 2em;
+}
+
+.imageRight {
+    grid-area: content2;
+}
+
+p#aboutStory {
+    color: rgba(50, 21, 6, 0.9);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 75px;
+    line-height: 1.5em;
+}
+
+/*End to about.html*/
+
+/* Start to Footer */
+
+footer {
+    grid-area: footer;
+    margin:0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(233, 233, 240, 0.616);
+    color: rgba(50, 21, 6, .8);
+    font-weight: bold;
+    border-top: 4px solid rgba(50, 21, 6, 0.6);
+    justify-self: center;
+}
+
+.footer p {
+    text-align: center;
+}
+
+/* End to Footer */
+
+
+
+/* Start to links */
+
+a:link {
+    color: lightseagreen;
+    text-decoration: none;
+    
+}
+
+a:visited {
+   color: seagreen;
+   
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+/* End to links */
