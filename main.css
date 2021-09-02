@@ -34,7 +34,17 @@ img {
     ul.mainNav li a {
       float: none;
       text-align: center;
-      font-size: 14px;
+      display: block;
+      }
+
+      ul.mainNav {
+          padding: 0;
+        }
+       
+
+      img#logo {
+          width: 50%;
+          height:auto;
       }
     
     .container {
@@ -77,7 +87,7 @@ img#logo  {
 }
 
 nav { 
-    float: right;
+    text-align: right;
     padding-top:10px;
     
 }
