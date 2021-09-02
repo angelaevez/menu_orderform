@@ -1,0 +1,107 @@
+body {
+    font-family: 'open_sansregular';
+    background-color: rgb(167, 212, 197);
+    padding: 10px;
+}
+
+#header {
+    color: white;
+    font-family: 'montserratregular';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: .2em;
+    background-color: rgba(10, 86, 61, .8);
+    padding: inherit;
+    width: 1400px;
+    height: 100px;
+    margin: 10px auto 30px auto;
+    border: 10px solid rgb(216, 255, 204);
+}
+
+#content {
+    color:ghostwhite;
+    background-color: rgba(9, 80, 75, .8);
+    padding: 20px;
+    margin: 20px 5px;
+    border: 10px double rgb(216, 255, 204);
+    
+}
+
+h2 {
+    color:rgb(255, 239, 204);
+    font-family: 'montserratregular';
+    letter-spacing: .1em;
+    font-size: 24px;
+    padding-top: 5px;
+    text-decoration: underline;
+    
+}
+
+h3 {
+    color: white;
+}
+
+form {
+    background-color: rgba(10, 86, 61, .8);
+    color: white;
+    padding: 20px;
+    border: 10px solid rgb(216, 255, 204)
+}
+
+legend {
+    font-family: 'montserratregular';
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: rgb(255, 239, 204);
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+input[type="text"]:focus {
+    background-color: yellow;
+}
+
+input[type="email"]:focus {
+    background-color: yellow;
+}
+
+input[type="tel"]:focus {
+    background-color: yellow;
+}
+
+#navigation li {
+    list-style-type: none;
+    display: inline;
+    
+} 
+
+li {
+   margin-right: 20px;
+}
+    
+li.coming-soon {
+    display: none !important;
+   
+}
+
+a:link {
+    color:white;
+}
+
+a:visited {
+    color: cyan;
+}
+
+input#submit {
+    background-color: gold;
+    text-shadow: 0px 0px 1px #ffffff;
+    border-bottom: 2px solid #b2b2b2;
+}
+
+input#submit:hover {
+    background-color: greenyellow;
+}

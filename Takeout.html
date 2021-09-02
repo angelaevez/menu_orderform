@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+           
+            <meta name="description" content="Menu and take out order form for Plumeria Resturant">
+            <title>Order Take Out</title>
+            <link rel="stylesheet" type="text/css" href="main.css" />
+            <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" />
+    </head>
+    <body>
+        <header id="header"><!--Start to header-->
+        <h1>Plumeria Vegetarian Resturant</h1>
+        <nav id="navigation">
+            <ul>
+                <li class="coming-soon">Home</li>
+                <li class="coming-soon">About Us</li>
+                <li class="coming-soon">Contact Us</li>
+                <li><a href="takeout.html">Menu and Order Form</a></li>
+            </ul>
+        </nav>
+        </header><!--End to header-->
+        <div id="content"><!--Start to content-->
+        <h2 id="appetizers">Appetizers</h2>
+        
+            <h3><strong>Fresh Spring Rolls</strong></h3>
+            <p>Fresh spring veggie rolls with rice noodles, tofu, cilantro,
+                carrots, cucumbers, and lettuce, wrapped in brown rice paper
+                served with homemade peanut sauce and fresh basil lime
+                vinaigrette.</p>
+            <p>$6.95</p>
+            <img src="images/cocobols-zW8wA4QwS2M-unsplash.jpg" alt="Fresh spring rolls in a bowl" title="Fresh spring rolls" />
+            <br />
+            <br />
+            <h3><strong>Thai Crispy Rolls</strong></h3>
+            <p>Crispy fried veggie egg rolls with silver noodles, cabbage and 
+                carrots served with sweet and sour sauce.</p>
+            <p>$6.95</p>
+            <br />
+            <h3><strong>Flower Cups</strong></h3>
+            <p>A unique combination of Thai seasonings with tofu, peas and carrots,
+                served in crispy flower cups. Accompanied by a cucumber salad.</p>
+            <p>$6.95</p>
+            <br />
+        
+        <h2 id="entrees">Entrees</h2>
+        
+            <h3><strong>Green Curry</strong></h3>
+            <p>Eggplant, bell peppers, bamboo shoots, and fresh basil in a green 
+                curry sauce.</p>
+                <p>$11.75</p>
+                <img src="images/louis-hansel-ZPWR_TWZ4HA-unsplash.jpg" alt="A bowl of green curry" title="Green curry" />   
+                <br />
+                <br />
+            <h3><strong>Pad Thai</strong></h3>
+            <p>Rice vermicelli, tangy tamarind sauce, fresh bean sprouts and crushed 
+                peanuts. Egg optional</p>
+                <p>$11.75</p>
+                <br />
+            <h3><strong>Fresh Ginger</strong></h3>
+            <p>Delightful fresh ginger stir-fried with zucchini, celery, carrots, 
+                fresh mushrooms, onions, and green onions.</p>
+                <p>$11.75</p>
+                <br />
+        
+        <h2 id="desserts">Desserts</h2>
+        
+            <h3><strong>Banana Caramel Cheese Cake Egg Roll</strong></h3>
+            <p>Rich, creamy cheesecake layered with chunks of banana and caramel 
+                with a light tangy finish, rolled in a melt-in-mouth flaky pastry tortilla.</p>
+                <p>$6</p>
+                <br />
+            <h3><strong>Chocolate Lava Cake</strong></h3>
+            <p>Our moist dark chocolate cake is enrobed withdark chocolate and filled with 
+                dark chocolate truffle lava.</p>
+                <p>$7</p>
+                <img src="images/jennifer-schmidt-gHm50qaMaXc-unsplash.jpg" alt="A bowl of green curry" title="Green curry"/>
+                <br />
+                <br />
+            <h3><strong>Hand-made Vanilla Bean Crème Brûlée</strong></h3>
+            <p>Features real vanilla beans and topped with a torched sugar crust.</p>
+            <p>$6</p>
+            <br />
+        
+      </div><!--End to content-->
+        <div id="form"><!--Start to Order Form-->
+    <form action="http://www.example.come/review.php" method="get">
+        <fieldset>
+            <legend>
+                Your Details
+            </legend>
+            <label>
+                Name:
+                <input type="text" name="name" required>
+            </label>
+            <br />
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+            <br />
+            <label>
+                Phone number:
+                <input type="tel" id="phone" name="phone"
+                required>
+            </label>
+            <br />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>
+                Choose your items
+            </legend>
+            <p>Appetizers</p>
+            <input type= "checkbox" name="appetizers" value="freshSpringRolls" /> Fresh Spring Rolls
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <br />
+            <input type= "checkbox" name="appetizers" value="thaiCrispyRolls"/> Thai Crispy Rolls
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <br/>
+            <input type= "checkbox" name="appetizers" value="flowerCups"/> Flower Cups
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <br />
+            <p>Entrees</p>
+            <input type= "checkbox" name="entrees" value="greenCurry" /> Green Curry
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <br />
+            <input type= "checkbox" name="entrees" value="padThai"/> Pad Thai
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <br/>
+            <input type= "checkbox" name="entrees" value="freshGinger"/> Fresh Ginger
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <p>Desserts</p>
+            <input type= "checkbox" name="desserts" value="bananaCaramelCheeseCakeEggRoll" /> Banana Caramel Cheese Cake Egg Roll
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <br />
+            <input type= "checkbox" name="desserts" value="chocolateLavaCake"/> Chocolate Lava Cake
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <br/>
+            <input type= "checkbox" name="desserts" value="vanillaBeanCremeBrulee"/> Hand-made Vanilla Bean Crème Brûlée
+            <select name="quantity">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+        </fieldset>
+        <br />
+        <fieldset>
+                <legend>
+                    Payment Information
+                </legend>
+                <label>
+                    Card Number
+                    <input type="text" maxlength= "16" id="cardNumber" required>
+                </label>
+                <br />
+                <label>
+                    Expiration Month 
+                    <input type="text" maxlength="2" id="expMonth" required>
+                </label>
+                <br />
+                <label>
+                    Expiration Year 
+                    <input type="text" maxlength="4" id="expYear" required>
+                </label>
+                    <br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>
+                    Billing Address
+                </legend>
+                <label>
+                    Street Address
+                    <input type="text" name="street" required>
+                </label>
+                <br />
+                <label>
+                    City
+                    <input type="text" name="city" required>
+                </label>
+                <br />
+                <label>
+                    State
+                    <input type="text" name="state" required>
+                </label>
+                    <br />
+                <label>
+                    Zip Code
+                    <input type="text" maxlength="5" name="zip" required>
+                </label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                 <legend>
+                    Place your order
+                    </legend>
+                    <input id="submit" type="submit" name="submit" value="SUBMIT" />
+             </fieldset>
+        <br />
+    </form>
+  </div> <!--End to Order Form-->
+ </body>
+</html>
